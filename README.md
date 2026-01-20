@@ -7,8 +7,8 @@ Welcome to **My Awesome Project**! This project demonstrates how to write a prop
 ## 🔗 Links
 
 - [GitHub Homepage](https://github.com)  
-- [Python Official Docs](https://docs.python.org/3/)  
-- [Relative Link Example](docs/usage.md) – points to another file in your repository
+👉 [Open the app](main.html)
+
 
 ---
 
