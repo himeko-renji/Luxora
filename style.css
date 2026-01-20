@@ -530,7 +530,7 @@ a {
 /* marquee */
 marquee{
     font-size: 25px;
-    font-family: sans-serif;
+    font-family: times new roman;
     font-weight: 700;
     color:#ffffff;
     background-color: #000000;
@@ -1984,6 +1984,7 @@ marquee{
 .hours-table td {
   padding: 14px 16px;
 }
+
 
 
 
