@@ -1,0 +1,414 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxora Hotel | Rooms</title>
+
+<link rel="stylesheet" href="style2.css">
+</head>
+
+
+<body>
+<header>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+     <div class="top-item">
+        <img src="logo.png" class="logo">
+     </div>
+     <div class="top-item center">
+        <i class="fa-solid fa-location-dot"></i>
+        Jalan Stesen Sentral 5, KL Sentral, 50470 Kuala Lumpur
+     </div>
+     <div class="top-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@luxorahotel.gmail.my">info.luxorahotel@gmail.com.my</a>
+     </div>
+     <div class="top-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/60179326582">+601 7932 6582</a>
+     </div>
+  </div>
+
+  <div class="line"></div>
+
+  <!-- NAVBAR -->
+  <nav class="nav-bar">
+     <a href="main.html" >HOME</a>
+     <a href="book.html" class="active">ROOMS</a>
+     <a href="dinner.html">RESTAURANT</a>
+     <a href="facilities.html">FACILITIES</a>
+     <a href="events.html">EVENTS</a>
+     <a href="contact.html">CONTACT US</a>
+     <a href="about.html">ABOUT US</a>
+  </nav>
+
+  <div class="line"></div>
+</header>
+
+<!-- BOOKING BAR -->
+<div class="booking-bar">
+  <div class="btn-group">
+    <div class="date-picker-container">
+      <input type="text" id="checkInInput" placeholder="Check In" readonly>
+      <input type="text" id="checkOutInput" placeholder="Check Out" readonly>
+
+      <div class="calendar-dropdown" id="calendar">
+        <div class="calendar-header">
+          <button class="nav" id="prevMonthBtn">‹</button>
+          <span id="monthLabel"></span>
+          <button class="nav" id="nextMonthBtn">›</button>
+        </div>
+        <div class="calendar-body">
+          <div class="weekdays">
+            <span>Sun</span><span>Mon</span><span>Tue</span>
+            <span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+          </div>
+          <div class="month" id="calendarDays"></div>
+        </div>
+        <div class="calendar-footer">
+          <button id="calendarResetBtn">Reset</button>
+          <button id="calendarDoneBtn" class="done">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <button id="btnRooms" class="btnRooms">
+        <i class="fa fa-user"></i>
+        <span id="txtRooms">1 ROOM, 1 ADULT, 1 CHILD</span>
+      </button>
+      <div id="roomPanel" class="room-panel hidden">
+        <div class="row">
+          <span>Room</span>
+          <button id="roomMinus">-</button>
+          <span id="roomCount">1</span>
+          <button id="roomPlus">+</button>
+        </div>
+        <div class="row">
+          <span>Adult</span>
+          <button id="adultMinus">-</button>
+          <span id="adultCount">1</span>
+          <button id="adultPlus">+</button>
+        </div>
+        <div class="row">
+          <span>Children</span>
+          <button id="childMinus">-</button>
+          <span id="childCount">1</span>
+          <button id="childPlus">+</button>
+        </div>
+        <button id="roomDone" class="done-btn">DONE</button>
+      </div>
+    </div>
+
+    <button class="availability">
+      <a href="book.html"> AVAILABILITY</a>
+    </button>
+  </div>
+</div>
+
+
+<section class="rooms-section">
+
+<h1>ROOMS</h1>
+
+<p> The 385 guestrooms and suites at this urban resort reflect the city’s distinctly cosmopolitan charm with functional layouts. Let the hum of the city slips away; replaced by serene sophistication and unsurpassed hospitality.</p> 
+
+
+<p> <strong>Note:</strong> This is a non-smoking room. A <b>RM500</b> cleaning fee shall be levied for any violation. Durian, mangosteen and jackfruit are strictly prohibited. A <b>RM1000</b> cleaning fee shall be levied for any violation. </p>
+
+
+<!-- TWIN DELUXE -->
+<div class="room-card">
+  <div class="room-image slideshow">
+    <div class="slides"><img src="room-2.jpg"></div>
+    <div class="slides"><img src="room-22.jpg"></div>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    <div class="dots"></div>
+  </div>
+  <div class="room-details">
+    <h2>TWIN DELUXE ROOM</h2>
+    <p>Unwind in comfort and style with elegant interiors, enhanced with premium fixtures and fittings. Our Deluxe Rooms feature sleep-inducing beds, a 50-inch IPTV, and each bathroom offers a walk-in chromotherapy shower, LED-lit mirror and more. Thirty of the rooms have a private balcony and with connecting rooms also available, they are ideal for every type of stay.</p>
+    <div class="room-icons">&#128100 2 People &#128716 2 Single Beds &#128250 40 inches TV size"</div>
+<a href="room2.html">VIEW DETAILS</a> 
+    <div class="book-area">
+      <div class="price">MYR 709.00</div>
+      <button class="book-btn" onclick="bookRoom()">BOOK</button>
+    </div>
+  </div>
+</div>
+
+<!-- KING DELUXE -->
+<div class="room-card">
+  <div class="room-image slideshow">
+    <div class="slides"><img src="room-1.jpg"></div>
+    <div class="slides"><img src="room-11.jpg"></div>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    <div class="dots"></div>
+  </div>
+  <div class="room-details">
+    <h2>KING DELUXE ROOM</h2>
+    <p>Our Executive Suites elevate every stay with additional space, contemporary interiors and the latest intelligent technology, such as smart curtains and wireless bedside chargers. Each spa-inspired bathroom features a whirlpool tub with TV and exclusive bath amenities.</p>
+    <div class="room-icons">&#128100 2 People &#128716 1 King Bed &#128250 40 inches TV size"</div>
+<a href="room1.html">VIEW DETAILS</a> 
+    <div class="book-area">
+      <div class="price">MYR 877.00</div>
+      <button class="book-btn" onclick="bookRoom()">BOOK</button>
+    </div>
+  </div>
+</div>
+
+<!-- SUPERIOR DELUXE -->
+<div class="room-card">
+  <div class="room-image slideshow">
+    <div class="slides"><img src="room-3.2.jpg"></div>
+    <div class="slides"><img src="room3.png"></div>
+    <div class="slides"><img src="room-3.3.jpg"></div>
+    <div class="slides"><img src="room-3.4.jpg"></div>
+    <div class="slides"><img src="room-3.5.jpg"></div>
+
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    <div class="dots"></div>
+  </div>
+  <div class="room-details">
+    <h2>SUPERIOR ROOM</h2>
+    <p>The Family Terrace rooms are specially designed for families to stay and play together in style, with a spacious room featuring two queen beds that comfortably sleep two adults and two children. Enjoy pool views from the balcony and child-focused amenities like bathroom products, bathrobes and slippers, and a bathtub with TV.</p>
+    <div class="room-icons">&#128100 2 People &#128716 1 Queen Bed &#128250 40 inches TV size"</div>
+<a href="room3.html">VIEW DETAILS</a> 
+    <div class="book-area">
+      <div class="price">MYR 985.00</div>
+      <button class="book-btn" onclick="bookRoom()">BOOK</button>
+    </div>
+  </div>
+</div>
+
+<!-- PRESIDENTIAL SUITE -->
+<div class="room-card">
+  <div class="room-image slideshow">
+    <div class="slides"><img src="room-4.2.jpg"></div>
+    <div class="slides"><img src="room4.jpg"></div>
+    <div class="slides"><img src="room-4.3.jpg"></div>
+    <div class="slides"><img src="room-4.4.jpg"></div>
+     <div class="slides"><img src="room-4.5.jpg"></div>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    <div class="dots"></div>
+  </div>
+  <div class="room-details">
+    <h2>PRESIDENTIAL SUITE</h2>
+    <p>Experience the pinnacle of five-star exclusivity in our Presidential Suite.
+Perched on the top floor of Luxore Hotel, with panoramic views of the City Kuala Lumpur, this spectacular space sets the stage for unforgettable vacations. Unwind in style with a stylish master bedroom, separate twin bedroom, a luxurious living space with a bar, comfy seating and a stunning chandelier, plus floor-to-ceiling windows and state-of-the-art technology. The marble bathroom features a bathtub and separate walk-in rain shower.</p>
+    <div class="room-icons">&#128100 2 People &#128716 1 King Bed &#128250 55 inches TV size"</div>
+<a href="room4.html">VIEW DETAILS</a> 
+    <div class="book-area">
+      <div class="price">MYR 1,709.00</div>
+      <button class="book-btn" onclick="bookRoom()">BOOK</button>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <nav class="nav-bar">
+     <a href="main.html">HOME</a>
+     <a href="book.html">ROOMS</a>
+     <a href="facilities.html">FACILITIES</a>
+     <a href="events.html">EVENTS</a>
+     <a href="contact.html">CONTACT US</a>
+  </nav>
+  <div class="line"></div>
+  <div class="footer-info">
+    <div class="left-section">
+      <img src="awards.jpg" alt="hotel awards">
+    </div>
+    <div class="right-section">
+      <h1>FIND US!</h1>
+      <div class="row"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/60179326582">+601 7932 6582</a></div>
+      <div class="row"><i class="fa-solid fa-envelope"></i><a href="mailto:info@luxorahotel.gmail.my">info@luxorahotel.gmail.my</a></div>
+      <div class="row"><i class="fa-solid fa-location-dot"></i>Jalan Stesen Sentral 5, KL Sentral</div>
+      <div class="below-right-section">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ScrollTopBtn -->
+<button id="scrollTopBtn">&#8679;</button>
+
+<script>
+document.querySelectorAll('.slideshow').forEach(slider => {
+  let slides = slider.querySelectorAll('.slides');
+  let dotsBox = slider.querySelector('.dots');
+  let prev = slider.querySelector('.prev');
+  let next = slider.querySelector('.next');
+  let index = 0;
+
+  slides.forEach((_, i) => {
+    let dot = document.createElement('span');
+    dot.className = 'dot';
+    dot.onclick = () => show(i);
+    dotsBox.appendChild(dot);
+  });
+
+  let dots = dotsBox.querySelectorAll('.dot');
+
+  function show(n) {
+    index = (n + slides.length) % slides.length;
+    slides.forEach(s => s.style.display = 'none');
+    dots.forEach(d => d.classList.remove('active-dot'));
+    slides[index].style.display = 'block';
+    dots[index].classList.add('active-dot');
+  }
+
+  prev.onclick = () => show(index - 1);
+  next.onclick = () => show(index + 1);
+
+  show(0);
+});
+
+function bookRoom() {
+  alert("Room added to booking.");
+}
+</script>
+
+<script>
+    /* ==================== CALENDAR ==================== */
+  const calendar = document.getElementById("calendar");
+  const checkInInput = document.getElementById("checkInInput");
+  const checkOutInput = document.getElementById("checkOutInput");
+
+  if (calendar && checkInInput && checkOutInput) {
+    const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    let currentDate = new Date();
+    let mode = "in";
+    let checkInDate = null;
+    let checkOutDate = null;
+
+    const monthLabel = document.getElementById("monthLabel");
+    const calendarDays = document.getElementById("calendarDays");
+
+    const calendarPrev = calendar.querySelector(".calendar-header button:first-child");
+    const calendarNext = calendar.querySelector(".calendar-header button:last-child");
+    const resetBtn = calendar.querySelector(".calendar-footer button:first-child");
+    const doneBtn = calendar.querySelector(".calendar-footer button.done");
+
+    const renderCalendar = () => {
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth();
+      monthLabel.innerText = `${monthNames[month]} ${year}`;
+      calendarDays.innerHTML = "";
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      for (let i = 0; i < firstDay; i++) calendarDays.appendChild(document.createElement("div"));
+
+      for (let d = 1; d <= daysInMonth; d++) {
+        const div = document.createElement("div");
+        div.className = "day";
+        div.innerText = d;
+        div.addEventListener("click", () => {
+          const chosen = new Date(year, month, d);
+          const label = chosen.toLocaleDateString();
+          if (mode === "in") {
+            checkInDate = chosen;
+            checkOutDate = null;
+            checkInInput.value = label;
+            checkOutInput.value = "";
+          } else {
+            if (!checkInDate || chosen <= checkInDate) {
+              alert("Invalid Check Out date");
+              return;
+            }
+            checkOutDate = chosen;
+            checkOutInput.value = label;
+          }
+          calendar.style.display = "none";
+        });
+        calendarDays.appendChild(div);
+      }
+    };
+
+    checkInInput.addEventListener("click", () => { mode = "in"; calendar.style.display = "block"; renderCalendar(); });
+    checkOutInput.addEventListener("click", () => { mode = "out"; calendar.style.display = "block"; renderCalendar(); });
+    calendarPrev.addEventListener("click", () => { currentDate.setMonth(currentDate.getMonth() - 1); renderCalendar(); });
+    calendarNext.addEventListener("click", () => { currentDate.setMonth(currentDate.getMonth() + 1); renderCalendar(); });
+    resetBtn.addEventListener("click", () => { checkInDate = checkOutDate = null; checkInInput.value = ""; checkOutInput.value = ""; renderCalendar(); });
+    doneBtn.addEventListener("click", () => { calendar.style.display = "none"; });
+
+    renderCalendar();
+  }
+
+  /* ==================== ROOM COUNTER ==================== */
+  const roomPanel = document.getElementById("roomPanel");
+  if (roomPanel) {
+    const roomCount = document.getElementById("roomCount");
+    const adultCount = document.getElementById("adultCount");
+    const childCount = document.getElementById("childCount");
+
+    document.getElementById("roomPlus").addEventListener("click", () => roomCount.innerText++);
+    document.getElementById("roomMinus").addEventListener("click", () => roomCount.innerText > 1 && roomCount.innerText--);
+    document.getElementById("adultPlus").addEventListener("click", () => adultCount.innerText++);
+    document.getElementById("adultMinus").addEventListener("click", () => adultCount.innerText > 1 && adultCount.innerText--);
+    document.getElementById("childPlus").addEventListener("click", () => childCount.innerText++);
+    document.getElementById("childMinus").addEventListener("click", () => childCount.innerText > 0 && childCount.innerText--);
+
+    document.getElementById("roomDone").addEventListener("click", () => {
+      roomPanel.classList.add("hidden");
+      document.getElementById("txtRooms").innerText =
+        `${roomCount.innerText} ROOM, ${adultCount.innerText} ADULT, ${childCount.innerText} CHILD`;
+    });
+
+    document.getElementById("btnRooms").addEventListener("click", () => roomPanel.classList.toggle("hidden"));
+  }
+
+  /* ==================== MAP DROPDOWN ==================== */
+  document.querySelectorAll(".drop-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+      const content = btn.nextElementSibling;
+      content.style.maxHeight ? content.style.maxHeight = null : content.style.maxHeight = content.scrollHeight + "px";
+    });
+  });
+
+  /* ==================== SCROLL TO TOP ==================== */
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  if (scrollTopBtn) {
+    window.addEventListener("scroll", () => {
+      scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+
+  document.getElementById("checkAvailabilityBtn").addEventListener("click", checkAvailability);
+
+  function checkAvailability() {
+    const checkin = document.getElementById("checkin").value;
+    const checkout = document.getElementById("checkout").value;
+    const guests = document.getElementById("roomguests").value;
+
+    if (!checkin || !checkout) {
+      alert("Please select both check-in and check-out dates.");
+      return;
+    }
+
+    alert(
+      "Room Booking Details:\n\n" +
+      "Check-in: " + checkin +
+      "\nCheck-out: " + checkout +
+      "\nGuests: " + guests
+    );
+  }
+</script>
+
+</body>
+</html>

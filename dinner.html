@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxora Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+<body>
+<header>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+     <div class="top-item">
+        <img src="logo.png" class="logo">
+     </div>
+     <div class="top-item center">
+        <i class="fa-solid fa-location-dot"></i>
+        Jalan Stesen Sentral 5, KL Sentral, 50470 Kuala Lumpur
+     </div>
+     <div class="top-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@luxorahotel.gmail.my">info.luxorahotel@gmail.com.my</a>
+     </div>
+     <div class="top-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/60179326582">+601 7932 6582</a>
+     </div>
+  </div>
+
+  <div class="line"></div>
+
+  <!-- NAVBAR -->
+  <nav class="nav-bar">
+     <a href="main.html" >HOME</a>
+     <a href="book.html">ROOMS</a>
+     <a href="dinner.html" class="active">RESTAURANT</a>
+     <a href="facilities.html">FACILITIES</a>
+     <a href="events.html">EVENTS</a>
+     <a href="contact.html">CONTACT US</a>
+     <a href="about.html">ABOUT US</a>
+  </nav>
+
+  <div class="line"></div>
+</header>
+
+<!-- BOOKING BAR -->
+<div class="booking-bar">
+  <div class="btn-group">
+    <div class="date-picker-container">
+      <input type="text" id="checkInInput" placeholder="Check In" readonly>
+      <input type="text" id="checkOutInput" placeholder="Check Out" readonly>
+
+      <div class="calendar-dropdown" id="calendar">
+        <div class="calendar-header">
+          <button class="nav" id="prevMonthBtn">‹</button>
+          <span id="monthLabel"></span>
+          <button class="nav" id="nextMonthBtn">›</button>
+        </div>
+        <div class="calendar-body">
+          <div class="weekdays">
+            <span>Sun</span><span>Mon</span><span>Tue</span>
+            <span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+          </div>
+          <div class="month" id="calendarDays"></div>
+        </div>
+        <div class="calendar-footer">
+          <button id="calendarResetBtn">Reset</button>
+          <button id="calendarDoneBtn" class="done">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <button id="btnRooms" class="btnRooms">
+        <i class="fa fa-user"></i>
+        <span id="txtRooms">1 ROOM, 1 ADULT, 1 CHILD</span>
+      </button>
+      <div id="roomPanel" class="room-panel hidden">
+        <div class="row">
+          <span>Room</span>
+          <button id="roomMinus">-</button>
+          <span id="roomCount">1</span>
+          <button id="roomPlus">+</button>
+        </div>
+        <div class="row">
+          <span>Adult</span>
+          <button id="adultMinus">-</button>
+          <span id="adultCount">1</span>
+          <button id="adultPlus">+</button>
+        </div>
+        <div class="row">
+          <span>Children</span>
+          <button id="childMinus">-</button>
+          <span id="childCount">1</span>
+          <button id="childPlus">+</button>
+        </div>
+        <button id="roomDone" class="done-btn">DONE</button>
+      </div>
+    </div>
+
+    <button class="availability">
+      <a href="book.html"> AVAILABILITY</a>
+    </button>
+  </div>
+</div>
+
+<!-- DINNER PAGE -->
+<div class="dinner-container">
+  <h1>BOLD FLAVOURS &amp; TANTALISING TASTES!</h1>
+<!-- SLIDE CONTAINER -->
+  <div class="slidder" data-images="dine2.jpg,dine3.jpg,dine4.jpg,dine5.jpg,dine6.jpg,dine7.jpg">
+
+    <button id="prevBtn" type="button">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <img id="roomSliderImg" src="dine1.jpg" class="slides-pic" alt="Room Image">
+
+    <button id="nextBtn" type="button">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+  <div class="dots" id="roomDots"></div>
+</div>
+
+<!-- RESTAURANT INFO -->
+<section class="restaurant-section">
+  <h2>LUXORA RESTAURANTS</h2>
+
+  <p class="restaurant-text">
+    Brace yourselves for an evening of culinary wonders, sophistication, and celebration!<br>
+    Prepare your palates for a double dose of culinary magic as we unveil not one but two
+    exceptional restaurants by the renowned Chef Darren Chin.
+  </p>
+
+<div class="restaurant-box">
+  <div class="box-title">HOURS</div>
+
+  <table class="hours-table">
+    <tr>
+      <td>Open Wednesday–Monday (Closed on Tuesday)</td>
+      <td>12.00pm to 10.00pm</td>
+    </tr>
+    <tr>
+      <td>Lunch</td>
+      <td>12.00pm to 3.00pm</td>
+    </tr>
+    <tr>
+      <td>High Tea</td>
+      <td>4.00pm to 6.00pm</td>
+    </tr>
+    <tr>
+      <td>Dinner</td>
+      <td>6.00pm to 10.00pm</td>
+    </tr>
+    <tr>
+      <td>Seating Capacity</td>
+      <td>100 persons</td>
+    </tr>
+    <tr>
+      <td>Dress Code</td>
+      <td>Smart Casual. Flip-flops, slippers and shorts are strictly NOT permitted.</td>
+    </tr>
+  </table>
+</div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <nav class="nav-bar">
+     <a href="main.html">HOME</a>
+     <a href="book.html">ROOMS</a>
+     <a href="facilities.html">FACILITIES</a>
+     <a href="events.html">EVENTS</a>
+     <a href="contact.html">CONTACT US</a>
+  </nav>
+  <div class="line"></div>
+  <div class="footer-info">
+    <div class="left-section">
+      <img src="awards.jpg" alt="hotel awards">
+    </div>
+    <div class="right-section">
+      <h1>FIND US!</h1>
+      <div class="row"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/60179326582">+601 7932 6582</a></div>
+      <div class="row"><i class="fa-solid fa-envelope"></i><a href="mailto:info@luxorahotel.gmail.my">info@luxorahotel.gmail.my</a></div>
+      <div class="row"><i class="fa-solid fa-location-dot"></i>Jalan Stesen Sentral 5, KL Sentral</div>
+      <div class="below-right-section">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ScrollTopBtn -->
+<button id="scrollTopBtn">&#8679;</button>
+
+
+<!-- JS -->
+<script src="luxora.js"></script>
+
+</body>
+</html>
