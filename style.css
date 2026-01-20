@@ -526,14 +526,6 @@ a {
 }
 
 
-/*===== MUSIC =====*/
-.music-box{
-    display: flex;
-    background-color: #1e1b1d;
-    align-items: center;
-    padding: 10px;
-       justify-content: center;
-}
 
 /* marquee */
 marquee{
@@ -543,8 +535,7 @@ marquee{
     font-weight: 700;
     color:#ffffff;
     background-color: #000000;
-    border-radius:10px;
-    width: 1100px;
+    width: 1190px;
     padding-top: 5px;
     padding-bottom: 5px;
     justify-content: center;
@@ -1996,6 +1987,7 @@ marquee{
 .hours-table td {
   padding: 14px 16px;
 }
+
 
 
 
