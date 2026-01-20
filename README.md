@@ -1,2 +1,0 @@
-# Luxora
-Hotel, group project 
