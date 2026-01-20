@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora Presidential Suite </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<header>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+     <div class="top-item">
+        <img src="logo.png" class="logo">
+     </div>
+     <div class="top-item center">
+        <i class="fa-solid fa-location-dot"></i>
+        Jalan Stesen Sentral 5, KL Sentral, 50470 Kuala Lumpur
+     </div>
+     <div class="top-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@luxorahotel.gmail.my">info.luxorahotel@gmail.com.my</a>
+     </div>
+     <div class="top-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/60179326582">+601 7932 6582</a>
+     </div>
+  </div>
+
+  <div class="line"></div>
+
+  <!-- NAVBAR -->
+  <nav class="nav-bar">
+     <a href="main.html" >HOME</a>
+     <a href="rooms.html" class="active">ROOMS</a>
+     <a href="dinner.html">RESTAURANT</a>
+     <a href="facilities.html">FACILITIES</a>
+     <a href="events.html">EVENTS</a>
+     <a href="contact.html">CONTACT US</a>
+     <a href="about.html">ABOUT US</a>
+  </nav>
+
+  <div class="line"></div>
+</header>
+
+<!-- BOOKING BAR -->
+<div class="booking-bar">
+  <div class="btn-group">
+    <div class="date-picker-container">
+      <input type="text" id="checkInInput" placeholder="Check In" readonly>
+      <input type="text" id="checkOutInput" placeholder="Check Out" readonly>
+
+      <div class="calendar-dropdown" id="calendar">
+        <div class="calendar-header">
+          <button class="nav" id="prevMonthBtn">‹</button>
+          <span id="monthLabel"></span>
+          <button class="nav" id="nextMonthBtn">›</button>
+        </div>
+        <div class="calendar-body">
+          <div class="weekdays">
+            <span>Sun</span><span>Mon</span><span>Tue</span>
+            <span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+          </div>
+          <div class="month" id="calendarDays"></div>
+        </div>
+        <div class="calendar-footer">
+          <button id="calendarResetBtn">Reset</button>
+          <button id="calendarDoneBtn" class="done">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <button id="btnRooms" class="btnRooms">
+        <i class="fa fa-user"></i>
+        <span id="txtRooms">1 ROOM, 1 ADULT, 1 CHILD</span>
+      </button>
+      <div id="roomPanel" class="room-panel hidden">
+        <div class="row">
+          <span>Room</span>
+          <button id="roomMinus">-</button>
+          <span id="roomCount">1</span>
+          <button id="roomPlus">+</button>
+        </div>
+        <div class="row">
+          <span>Adult</span>
+          <button id="adultMinus">-</button>
+          <span id="adultCount">1</span>
+          <button id="adultPlus">+</button>
+        </div>
+        <div class="row">
+          <span>Children</span>
+          <button id="childMinus">-</button>
+          <span id="childCount">1</span>
+          <button id="childPlus">+</button>
+        </div>
+        <button id="roomDone" class="done-btn">DONE</button>
+      </div>
+    </div>
+
+    <button class="availability">
+      <a href="book.html"> AVAILABILITY</a>
+    </button>
+  </div>
+</div>
+
+<div class="card-container">
+
+    <!-- SLIDER -->
+  <div class="slidder" data-images="room-4.2.jpg,room-4.3.jpg,room-4.4.jpg,room-4.5.jpg">
+
+    <button id="prevBtn" type="button">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <img id="roomSliderImg" src="room4.jpg" class="slides-pic" alt="Room Image">
+
+    <button id="nextBtn" type="button">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+  <div class="dots" id="roomDots"></div>
+
+
+
+
+
+
+    <!-- CONTENT -->
+    <div class="room-content">
+        <h1>PEREDENTIAL SUITE</h1>
+
+        <div class="info-row">
+            <div class="item">
+                <div class="item-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <line x1="8" y1="16" x2="16" y2="8"></line>
+                        <polyline points="12 8 16 8 16 12"></polyline>
+                        <polyline points="12 16 8 16 8 12"></polyline>
+                    </svg>
+                </div>
+                <span>45 SQM</span>
+            </div>
+
+            <div class="item">
+                <div class="item-icon">
+                    <svg viewBox="0 0 24 24" fill="white">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/>
+                        <path d="M12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </div>
+                <span>4 ADULTS </span>
+            </div>
+
+            <div class="item">
+                <div class="item-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M2 14h20"></path>
+                        <path d="M4 10h16v-3a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3z"></path>
+                    </svg>
+                </div>
+                <span>2 BEDROOMS 
+                    <br>(King & Twin)
+                </span>
+            </div>
+        </div>
+
+            <p class="description">
+                Experience the pinnacle of five-star exclusivity in our Presidential Suite. Perched on the top floor of
+                Sunway Resort Hotel, with panoramic views of the Sunway City Kuala Lumpur, this spectacular space sets
+                the stage for unforgettable vacations. Unwind in style with a stylish master bedroom, separate twin
+                bedroom, a luxurious living space with a bar, comfy seating and a stunning chandelier, plus
+                floor-to-ceiling windows and state-of-the-art technology. The marble bathroom features a bathtub and
+                separate walk-in rain shower.
+                <br><br>
+                Every guest will also be treated to bespoke benefits at the 20<sup>th</sup> Club Executive, in-room private
+                check-in/out, evening cocktails & canapés and more. Whether you are planning a special occasion, a
+                memorable weekend or an extended escape, our Presidential Suite will elevate every stay to the highest
+                levels of luxury.
+
+                <br>
+
+            </p>
+            <br>
+            <div class="amenities" style="text-align: left;">
+
+                <h2>EXCLUSIVE SERVICES</h2>
+                <ol>
+                    <li>20<sup>th</sup> Club access inclusive of afternoon tea and evening cocktails</li>
+                    <li>Personal Butler</li>
+                    <li>Daily breakfast at Sunset Terrace</li>
+                    <li>Early check-in and late check-out (subject to availability)</li>
+                    <li>Priority bookings at all dining outlets in the hotel</li>
+                    <li>Luxuriously stocked bar</li>
+                    <li>In-room check-in and check-out</li>
+                </ol>
+<br>
+                <h2>AMENITIES</h2>
+<br>
+                <h3>Technology &amp; Communication</h3>
+                <ol>
+                    <li>Three (3) TVs: 55-inch IPTV</li>
+                    <li>IP telephone with VoIP phone calls</li>
+                    <li>Smart curtains</li>
+                    <li>Motion sensor night light</li>
+                    <li>Wireless charger</li>
+                    <li>Complimentary high-speed wired and wireless internet access</li>
+                    <li>Ambient lighting</li>
+                </ol>
+<br>
+                <h3>Bathroom</h3>
+                <ol>
+                    <li>A master bathroom with walk-in chromotherapy shower and whirlpool tub with 21-inch TV, featuring
+                        a view of the city</li>
+                    <li>A bathroom with walk-in chromotherapy shower and bathtub, with 21-inch TV</li>
+                    <li>A powder room</li>
+                    <li>Exclusive bath amenities</li>
+                    <li>Electronic bidet</li>
+                    <li>Make-up mirror with LED light</li>
+                    <li>Hair dryer</li>
+                    <li>Bathrobe and slippers</li>
+                </ol>
+<br>
+                <h3>Other Amenities &amp; Services</h3>
+                <ol>
+                    <li>Two (2) separate bedrooms – a master bedroom with king bed and a twin-bedded room</li>
+                    <li>Living and dining area</li>
+                    <li>A Bar</li>
+                    <li>Coffee and tea facilities / Nespresso coffee with complimentary capsules</li>
+                    <li>In-room safe</li>
+                    <li>Ironing kit</li>
+                    <li>Laundry and valet services</li>
+                    <li>Pillow menu</li>
+                </ol>
+
+            </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<div class="footer">
+  <nav class="nav-bar">
+     <a href="main.html">HOME</a>
+     <a href="book.html">ROOMS</a>
+     <a href="facilities.html">FACILITIES</a>
+     <a href="events.html">EVENTS</a>
+     <a href="contact.html">CONTACT US</a>
+  </nav>
+  <div class="line"></div>
+  <div class="footer-info">
+    <div class="left-section">
+      <img src="awards.jpg" alt="hotel awards">
+    </div>
+    <div class="right-section">
+      <h1>FIND US!</h1>
+      <div class="row"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/60179326582">+601 7932 6582</a></div>
+      <div class="row"><i class="fa-solid fa-envelope"></i><a href="mailto:info@luxorahotel.gmail.my">info@luxorahotel.gmail.my</a></div>
+      <div class="row"><i class="fa-solid fa-location-dot"></i>Jalan Stesen Sentral 5, KL Sentral</div>
+      <div class="below-right-section">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ScrollTopBtn -->
+<button id="scrollTopBtn">&#8679;</button>
+
+
+<!-- JS -->
+<script src="luxora.js"></script>
+</body>
+</html>
+
